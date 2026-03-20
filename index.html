@@ -1,13 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Alpha Dashboard</title>
     <style>
-        body { font-family: sans-serif; text-align: center; background: #f4f4f4; }
-        h1 { color: #333; }
+        /* 기본 스타일 설정: 다크 모드 */
+        body {
+            margin: 0;
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            background-color: #0b0e11; /* 바이낸스/업비트 스타일 어두운 배경 */
+            color: #eaecef;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* 헤더 스타일 */
+        header {
+            width: 100%;
+            padding: 20px;
+            background-color: #181a20;
+            border-bottom: 1px solid #2b2f36;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #f0b90b; /* 강조색: 골드/옐로우 */
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        /* 대시보드 컨테이너 */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        /* 개별 카드 스타일 */
+        .card {
+            background-color: #1e2329;
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid #2b3139;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #f0b90b;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #848e9c;
+            font-size: 0.9rem;
+        }
+
+        .price {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        /* 상승/하락 색상 */
+        .up { color: #00c087; } /* 상승: 초록 */
+        .down { color: #f6465d; } /* 하락: 빨강 */
+
+        .change {
+            font-size: 0.9rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+            background-color: rgba(0, 192, 135, 0.1);
+        }
+
+        /* 하단 메시지 */
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #474d57;
+        }
     </style>
 </head>
 <body>
-    <h1>나의 첫 번째 웹사이트 🚀</h1>
-    <p>바이브 코딩으로 멋진 소프트웨어를 만들 준비가 되었습니다!</p>
-</body>
-</html>
+
+    <header>
+        <h1>ALPHASTOCK DASHBOARD</h1>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h3>KOSPI Index</h3>
+            <div class="price">2,652.41</div>
+            <div class="change up">▲ 1.24% (+32.50)</div>
+        </div>
+
+        <div class="card">
+            <h3>Samsung Electronics</h3>
+            <div class="price">73,200</div>
+            <div class="change up">▲ 0.82% (+600)</div>
+        </div>
+
+        <div class="card">
+            <h3>NVIDIA (NVDA)</h3>
+            <div class="price">$875.28</div>
+            <div class="change down" style="background-color: rgba(246, 69, 93, 0.1);">▼ 0.45% (-3.96)</div>
+        </div>
+    </div>
+
+    <footer>
+        ©
