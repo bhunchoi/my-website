@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aerospace | Heritage to Breakthrough</title>
+    <style>
+        /* 메인 페이지의 디자인 시스템 계승 */
+        :root {
+            --bg-color: #0f1113;
+            --text-main: #ffffff;
+            --text-sub: #94a3b8;
+            --accent: #3b82f6; 
+            --card-bg: #1e293b;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Pretendard', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* 네비게이션 (심플 버전) */
+        nav {
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #334155;
+        }
+        .back-link { color: var(--accent); text-decoration: none; font-weight: bold; }
+
+        /* 상세 페이지 히어로 섹션 */
+        .detail-hero {
+            padding: 80px 5%;
+            background: linear-gradient(to bottom, #1e293b, #0f1113);
+            text-align: center;
+        }
+        .detail-hero h1 { font-size: 2.5rem; margin-bottom: 20px; }
+        .detail-hero p { color: var(--text-sub); max-width: 700px; margin: 0 auto; }
+
+        /* 콘텐츠 섹션 */
+        section { padding: 40px 5%; max-width: 900px; margin: 0 auto; }
+        h2 { border-left: 4px solid var(--accent); padding-left: 15px; margin-bottom: 25px; font-size: 1.8rem; }
+
+        .content-box {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            border: 1px solid #334155;
+        }
+        .content-box h3 { color: var(--accent); margin-top: 0; }
+        .content-box ul { padding-left: 20px; color: var(--text-sub); }
+        .content-box li { margin-bottom: 10px; }
+
+        footer { text-align: center; padding: 40px; border-top: 1px solid #334155; color: var(--text-sub); }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo" style="font-weight: 800; letter-spacing: 2px;">BHUNCHOI</div>
+        <a href="index.html" class="back-link">← Back to Main</a>
+    </nav>
+
+    <header class="detail-hero">
+        <h1>Aerospace</h1>
+        <p>전통적인 항공 산업의 헤리티지와 우주 시대를 여는 혁신 기술의 융합을 연구합니다.</p>
+    </header>
+
+    <section>
+        <h2>Vision & Strategy</h2>
+        
+        <div class="content-box">
+            <h3>Traditional Heritage</h3>
+            <p>기존 항공우주 산업의 견고한 기술력을 바탕으로 안정적인 시스템 아키텍처를 분석합니다.</p>
+            <ul>
+                <li>고성능 추진 시스템 및 기체 구조 설계 분석</li>
+                <li>항공우주 공급망(Supply Chain)의 최적화 연구</li>
+            </ul>
+        </div>
+
+        <div class="content-box">
+            <h3>Space Robotics & Servicing</h3>
+            <p>지구 궤도를 넘어선 지속 가능한 우주 활동을 위한 핵심 기술에 집중합니다.</p>
+            <ul>
+                <li><strong>On-orbit Servicing:</strong> 인공위성 수명 연장 및 궤도 서비스 로봇 기술</li>
+                <li><strong>Space Infrastructure:</strong> 우주 거주구 및 인프라 구축을 위한 로보틱스 솔루션</li>
+            </ul>
+        </div>
+
+        <div class="content-box">
+            <h3>Investment Insight</h3>
+            <p>국내외 우주 항공 섹터의 밸류에이션을 추적하며, 특히 저궤도 위성 통신과 우주 모빌리티 분야의 성장 동력을 발굴하고 있습니다.</p>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Bhunchoi. All rights reserved.
+    </footer>
+
+</body>
+</html>
